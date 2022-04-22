@@ -10,6 +10,8 @@ import java.io.IOException;
 public class TestBase {
 
     protected static WebDriver wdriver;
+    public String loginEmail = "";
+    public String loginPassword = "";
 
     protected static void webSetup() throws IOException {
 
@@ -33,11 +35,6 @@ public class TestBase {
         String hudlUrl = "https://www.hudl.com/login";
         wdriver.get(hudlUrl);
         wdriver.manage().window().maximize();
-    }
-
-    protected void failedTestCaseSteps(String e){
-        //testRailFailResult(caseNum);
-        Assert.fail(String.valueOf(e));
     }
 
 }
