@@ -10,8 +10,8 @@ import java.io.IOException;
 public class TestBase {
 
     protected static WebDriver wdriver;
-    public String loginEmail = "";
-    public String loginPassword = "";
+    public String loginEmail = ""; // Add email here to test login test
+    public String loginPassword = ""; // Add password here to test login test
 
     protected static void webSetup() throws IOException {
 
