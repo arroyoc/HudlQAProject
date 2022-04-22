@@ -25,5 +25,10 @@ public class LoginPage extends PageObjectBase{
         return this;
     }
 
+    public HomePage clickLoginButton(){
+        waitAndClick(loginBtn);
+        return new HomePage(driver);
+    }
+
 
 }
